@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atrapa las herramientas</title>
+    <style>
+        .gamecontainer{	
+            background: #F58427;
+        }
+    </style>
+</head>
+<body>
+    <div id="gamecontainer"></div>
+    <script src="thd/libs/jshashtable.js" crossorigin="anonymous"></script>
+    <script src="thd/gd.js" crossorigin="anonymous"></script>
+    <script src="thd/gd-splash-image.js" crossorigin="anonymous"></script>
+    <script src="thd/libs/hshg.js" crossorigin="anonymous"></script>
+    <script src="thd/libs/rbush.js" crossorigin="anonymous"></script>
+    <script src="thd/inputmanager.js" crossorigin="anonymous"></script>
+    <script src="thd/jsonmanager.js" crossorigin="anonymous"></script>
+    <script src="thd/timemanager.js" crossorigin="anonymous"></script>
+    <script src="thd/runtimeobject.js" crossorigin="anonymous"></script>
+    <script src="thd/profiler.js" crossorigin="anonymous"></script>
+    <script src="thd/runtimescene.js" crossorigin="anonymous"></script>
+    <script src="thd/scenestack.js" crossorigin="anonymous"></script>
+    <script src="thd/polygon.js" crossorigin="anonymous"></script>
+    <script src="thd/force.js" crossorigin="anonymous"></script>
+    <script src="thd/layer.js" crossorigin="anonymous"></script>
+    <script src="thd/timer.js" crossorigin="anonymous"></script>
+    <script src="thd/runtimegame.js" crossorigin="anonymous"></script>
+    <script src="thd/variable.js" crossorigin="anonymous"></script>
+    <script src="thd/variablescontainer.js" crossorigin="anonymous"></script>
+    <script src="thd/oncetriggers.js" crossorigin="anonymous"></script>
+    <script src="thd/runtimebehavior.js" crossorigin="anonymous"></script>
+    <script src="thd/spriteruntimeobject.js" crossorigin="anonymous"></script>
+    <script src="thd/events-tools/commontools.js" crossorigin="anonymous"></script>
+    <script src="thd/events-tools/runtimescenetools.js" crossorigin="anonymous"></script>
+    <script src="thd/events-tools/inputtools.js" crossorigin="anonymous"></script>
+    <script src="thd/events-tools/objecttools.js" crossorigin="anonymous"></script>
+    <script src="thd/events-tools/cameratools.js" crossorigin="anonymous"></script>
+    <script src="thd/events-tools/soundtools.js" crossorigin="anonymous"></script>
+    <script src="thd/events-tools/storagetools.js" crossorigin="anonymous"></script>
+    <script src="thd/events-tools/stringtools.js" crossorigin="anonymous"></script>
+    <script src="thd/events-tools/windowtools.js" crossorigin="anonymous"></script>
+    <script src="thd/events-tools/networktools.js" crossorigin="anonymous"></script>
+    <script src="thd/pixi-renderers/pixi.js" crossorigin="anonymous"></script>
+    <script src="thd/pixi-renderers/pixi-filters-tools.js" crossorigin="anonymous"></script>
+    <script src="thd/pixi-renderers/runtimegame-pixi-renderer.js" crossorigin="anonymous"></script>
+    <script src="thd/pixi-renderers/runtimescene-pixi-renderer.js" crossorigin="anonymous"></script>
+    <script src="thd/pixi-renderers/layer-pixi-renderer.js" crossorigin="anonymous"></script>
+    <script src="thd/pixi-renderers/pixi-image-manager.js" crossorigin="anonymous"></script>
+    <script src="thd/pixi-renderers/spriteruntimeobject-pixi-renderer.js" crossorigin="anonymous"></script>
+    <script src="thd/pixi-renderers/loadingscreen-pixi-renderer.js" crossorigin="anonymous"></script>
+    <script src="thd/howler-sound-manager/howler.min.js" crossorigin="anonymous"></script>
+    <script src="thd/howler-sound-manager/howler-sound-manager.js" crossorigin="anonymous"></script>
+    <script src="thd/fontfaceobserver-font-manager/fontfaceobserver.js" crossorigin="anonymous"></script>
+    <script src="thd/fontfaceobserver-font-manager/fontfaceobserver-font-manager.js" crossorigin="anonymous"></script>
+    <script src="thd/gdjs-evtsext__sinemovement__sinemovement.js" crossorigin="anonymous"></script>
+    <script src="thd/Extensions/TextObject/textruntimeobject.js" crossorigin="anonymous"></script>
+    <script src="thd/Extensions/TextObject/textruntimeobject-pixi-renderer.js" crossorigin="anonymous"></script>
+    <script src="thd/Extensions/PrimitiveDrawing/shapepainterruntimeobject.js" crossorigin="anonymous"></script>
+    <script src="thd/Extensions/PrimitiveDrawing/shapepainterruntimeobject-pixi-renderer.js" crossorigin="anonymous"></script>
+    <script src="thd/gdjs-evtsext__flash__flash.js" crossorigin="anonymous"></script>
+    <script src="thd/gdjs-evtsext__health__health.js" crossorigin="anonymous"></script>
+    <script src="thd/gdjs-evtsext__stayonscreen__stayonscreen.js" crossorigin="anonymous"></script>
+    <script src="thd/Extensions/Physics2Behavior/physics2runtimebehavior.js" crossorigin="anonymous"></script>
+    <script src="thd/Extensions/Physics2Behavior/box2d.js" crossorigin="anonymous"></script>
+    <script src="thd/Extensions/AnchorBehavior/anchorruntimebehavior.js" crossorigin="anonymous"></script>
+    <script src="thd/Extensions/ParticleSystem/particleemitterobject.js" crossorigin="anonymous"></script>
+    <script src="thd/Extensions/ParticleSystem/particleemitterobject-pixi-renderer.js" crossorigin="anonymous"></script>
+    <script src="thd/Extensions/ParticleSystem/pixi-particles-pixi-renderer.min.js" crossorigin="anonymous"></script>
+    <script src="thd/Extensions/BBText/bbtextruntimeobject.js" crossorigin="anonymous"></script>
+    <script src="thd/Extensions/BBText/bbtextruntimeobject-pixi-renderer.js" crossorigin="anonymous"></script>
+    <script src="thd/Extensions/BBText/pixi-multistyle-text/dist/pixi-multistyle-text.umd.js" crossorigin="anonymous"></script>
+    <script src="thd/code0.js" crossorigin="anonymous"></script>
+    <script src="thd/code1.js" crossorigin="anonymous"></script>
+    <script src="thd/code2.js" crossorigin="anonymous"></script>
+    <script src="thd/code3.js" crossorigin="anonymous"></script>
+    <script src="thd/dataRelative.js" crossorigin="anonymous"></script>
+    <script>
+        var game;
+        game = new gdjs.RuntimeGame(gdjs.projectData, {});
+        //Create a renderer
+        game.getRenderer().createStandardCanvas(document.getElementById('gamecontainer'));
+        //Bind keyboards/mouse/touch events
+        game.getRenderer().bindStandardEvents(game.getInputManager(), window, document);
+        //Load all assets and start the game
+        game.loadAllAssets(function() {
+            game.startGameLoop();
+        });
+        gameLoaded = true
+
+        function closeGame () {
+            window.parent.postMessage("closegame", "*")
+            console.log('close herramientas game')
+        }
+        function endGame (ev) {
+            let thescore = ev;
+            console.log('EndGame:', thescore)
+            if(thescore.score){
+                var finalscoreval = thescore.score._value
+                var tools = thescore.tools._children
+                var rocks = thescore.rocks._value
+                var toolstring = 'A='+tools.A._value+'&B='+tools.B._value+'&C='+tools.C._value+'&D='+tools.D._value+'&E='+tools.E._value+'&rocas='+rocks
+                
+                window.parent.postMessage(
+                    JSON.stringify({
+                        Result: finalscoreval.toString(),
+                        Desglose: toolstring
+                    }),
+                    '*'
+                )
+                
+            }
+        }
+    </script>
+</body>
+</html>
