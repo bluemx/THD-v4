@@ -144,7 +144,7 @@ const finalizeFN = async (result, desglose) => {
     const res = await axios.post(api + "/SaveDataEmail", data);
     console.log('finalizeFN')
     console.log(res)
-    document.querySelector('.participation').innerHTML = res.data?.d || '...'
+    document.querySelector('.participationid').innerHTML = res.data?.d || '...'
 }
 
 const FNactivity =  async () => {
