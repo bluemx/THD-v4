@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es"  style="height: 100%;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Home Depot</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="app/app.css">
+</head>
+
+<body class="d-flex flex-column justify-content-between" style="height: 100%;">
+
+    <header class="pt-5 container text-center">
+        <img src="app/img/thehomedepot.svg" alt="The Home Depot" class="img-fluid ma-auto" style="max-width: 80px;">
+    </header>
+    
+
+    
+    <div class="container mx-auto text-light text-center my-4">
+        Antes de empezar, por favor indica el certificado electrónico que quisieras recibir en caso de resultar ganador.
+    </div>
+    <div class="container mx-auto row justify-content-center gx-1 gy-1 text-center no-gutter">
+        
+        
+        
+        <div class="col-6 col-sm-4 col-md-3">
+            <component-certificado image="app/cert/xbox.png" name="XBOX" value="$200" desc="Disfruta de la nueva generación de juegos y entretenimiento con Xbox. Explora consolas, juegos nuevos y clásicos, y accesorios de Xbox empezar tu colección. No puedes usar la tarjeta regalo de Xbox para comprar directamente una suscripción a Xbox Live Gold ni ningún otro servicio de suscripción. Asegúrate que tu cuenta de facturación es de México y se encuentra en Pesos Mexicanos, de lo contrario, no podrás canjear la tarjeta regalo."></component-certificado>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3">
+            <component-certificado image="app/cert/xboxlive.png" name="XBOX Live Gold" value="$169" desc="Juega en línea con tu suscripción Gold de 1 mes y únete a la mejor comunidad de jugadores, encuentra rápidamente compañeros para jugar con las opciones Clubes y Buscando grupo. Podrás conseguir entre 2 y 4 juegos gratuitos todos los meses y descuentos de hasta el 50-75 % en la tienda de Xbox One. Sólo válido en México."></component-certificado>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3">
+            
+            <component-certificado image="app/cert/playstation.png" name="PlayStation Store" value="$10 USD" desc="Saldo en formato de dólares en la cuenta del usuario para comprar juegos completos, descarga de contenido, comprar o rentar películas y pagar subscripciones dentro de las aplicaciones de la consola."></component-certificado>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3">
+            
+            <component-certificado image="app/cert/spotify.png" name="Spotify" value="$115" desc="La tarjeta de regalo es válida para planes Premium Individual. No es posible usarlas para Premium para Estudiantes, Premium Familiar, Premium Duo ni ofertas de prueba."></component-certificado>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3">
+            <component-certificado image="app/cert/itunes.png" name="iTunes" value="$200" desc="Disfruta de una experiencia de entretenimiento totalmente nueva. Utiliza la Tarjeta App Store &amp; iTunes para comprar apps, juegos, música y películas. Válida únicamente para compras realizadas en México de Apple Media Services."></component-certificado>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3">
+            
+            <component-certificado image="app/cert/uber.png" name="Uber" value="$150" desc="Paga tus viajes de Uber y comidas de Uber Eats. Esta tarjeta puede ser canjeada a través de la aplicación móvil de Uber y Uber Eats y pude ser utilizada en las ciudades en México donde Uber Eats y/o Uber está disponible y en dónde no existan restricciones legales o regulatorias para su uso. La tarjeta no puede ser utilizada fuera de México."></component-certificado>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3">
+            
+            <component-certificado image="app/cert/amazon.png" name="Amazon" value="$200" desc="Las Tarjetas Regalo de Amazon.com.mx pueden canjearse por millones de productos de Amazon. Las Tarjetas Regalo de Amazon.com.mx pueden ser utilizados únicamente en la compra de productos participantes en amazon.com.mx."></component-certificado>
+        </div>
+        <!--
+        <div class="col-6 col-sm-4 col-md-3">
+            <component-certificado image="app/cert/facturafiel.png" name="FacturaFiel.com" value="$200" desc="Crea FacturaFiel.com brinda a sus usuarios la mejor opción costo-beneficio existente en el mercado para expedir facturas y Comprobantes Fiscales Digitales por Internet (CFDI). Esta tarjeta es válida por 25 folios."></component-certificado>
+        </div>
+        
+        <div class="col-6 col-sm-4 col-md-3">
+            
+            <component-certificado image="app/cert/superdoctor.png" name="Súper Doctor" value="$240" desc="Tarjeta súper Doctor - 3 meses, algunos de los beneficios son: Asistencia Nutricional telefónica ilimitada, Asistencia Psicológica telefónica ilimitada, Asistencia Médica telefónica 24/7 ilimitada, Doctor en tu Casa sin costo 3 consultas (Limitado a 1 consulta al mes), Asistencia Dental 2 consultas + limpieza sin costo, Servicio de Ambulancia sin costo (2 eventos), Asistencia VISUAL en Ópticas Devlyn, DescuentaMx disfruta de increíbles descuentos en: Farmacias, Laboratorios, Restaurantes, entretenimiento, entre otros."></component-certificado>
+        </div>
+        
+        <div class="col-6 col-sm-4 col-md-3">
+            
+            <component-certificado image="app/cert/cinepolis.png" name="Cinépolis Klic" value="$200" desc="¡Disfruta los mejores estrenos!, Cinépolis Klic es la plataforma de streaming de Cinépolis con los estrenos recién salidos del cine, las mejores películas de catálogo, series de TV y entretenimiento para toda la familia. Este código te permitirá disfrutar de 4 películas disponible en renta y renta anticipada."></component-certificado>
+        </div>
+        -->
+        <div class="col-6 col-sm-4 col-md-3">
+            
+            <component-certificado image="app/cert/gandhi.png" name="Librerías Gandhi" value="$200" desc="En Gandhi, busca y compra el libro que estás deseando de una manera Fácil y Segura. Código válido unicamente en www.gandhi.com.mx, este código no es válido en tiendas físicas ni en Walmart y Palacio de Hierro."></component-certificado>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3">
+
+            <component-certificado image="app/cert/puntosfutbol.png" name="Puntos Futbol" value="$200" desc="Puntos Fútbol es una plataforma de entretenimiento para los fanátic@s del Fútbol, usa tu saldo para partiicpar en Trivias, Subastas, Marcadores y Retas donde podrás demostrar tus conocimientos y ganar increíbles premios."></component-certificado>
+
+        </div>
+
+
+
+        
+    </div>
+
+    </div> <!-- /.container -->
+
+    <div class="bg-white mt-5">
+        <blue-footer></blue-footer>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://unpkg.com/@bluemx/blue-components"></script>
+    <script src="app/Certificado.js"></script>
+    <script src="app/app.js"></script>
+</body>
+
+</html>
